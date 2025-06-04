@@ -5,22 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects – Akanksha Murali</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- If using FontAwesome icons, uncomment: -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pcfmZF3xZiHp+Un4cWmgblVh3DRQ2rsIsvJRcGHzPS0H0e4dH63v3IJROT1R+9Q2Xl2cV5y0eYzYpGGY8ThTXA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
 
-  <!-- ===== HEADER & NAV ===== -->
+  <!-- ========== HEADER ========== -->
   <header>
     <div class="container">
+      <!-- Left: social icons -->
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/akankshamurali" target="_blank">GitHub</a>
+        <a href="mailto:akanksha@example.com">Email</a>
+      </div>
+
+      <!-- Center: your name -->
       <h1>Akanksha Murali</h1>
+
+      <!-- Right: tabs -->
       <nav>
-        <a href="index.html">About</a>
+        <a href="index.html">Home</a>
         <a href="projects.html" class="active">Projects</a>
-        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== PROJECTS GRID ===== -->
+  <!-- ========== PROJECTS SECTION ========== -->
   <section class="section-wrapper projects-section" id="projects">
     <h2>Highlighted Projects</h2>
     <div class="project-cards">
@@ -34,9 +45,7 @@
             </div>
             <div class="card-content">
               <h3>Hexapod Autonomous Navigation</h3>
-              <p>
-                SLAM + MPC on a six‐legged robot using ZED stereo camera and ROS2. Real-time pose logging, obstacle avoidance, and dynamic gait control.
-              </p>
+              <p>SLAM + MPC on a six-legged robot using ZED stereo camera and ROS2. Real-time pose logging, obstacle avoidance, and dynamic gait control.</p>
             </div>
           </div>
         </a>
@@ -51,23 +60,22 @@
             </div>
             <div class="card-content">
               <h3>Traffic Light Detection</h3>
-              <p>
-                Real-time computer vision pipeline (Python/OpenCV) for detecting and classifying traffic lights in video streams.
-              </p>
+              <p>Real-time computer vision pipeline (Python/OpenCV) for detecting and classifying traffic lights in video streams.</p>
             </div>
           </div>
         </a>
       </div>
 
-      <!-- ==== ADD MORE PROJECT CARDS HERE ==== -->
-      <!-- Copy one of the above <div class="project-card">…</div> blocks, then edit href, img src, alt, <h3>, and <p>. -->
-
+      <!-- ==== ADD MORE PROJECT CARD BLOCKS HERE ==== -->
+      <!-- Copy/paste one of the <div class="project-card">…</div> blocks above,
+           then change href, img src, alt text, <h3> title, and <p> description. -->
+      
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ========== FOOTER ========== -->
   <footer>
-    <p>© 2025 Akankshа Murali. All rights reserved.</p>
+    <p>© 2025 Akanksha Murali. All rights reserved.</p>
   </footer>
 
 </body>
