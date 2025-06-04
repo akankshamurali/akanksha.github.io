@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akanksha Murali – Projects Portfolio</title>
+  <style>
+    /* =====================
+       1) RESET & BASIC GLOBALS 
+       ===================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #fafbfc;
+      color: #24292e;
+      line-height: 1.6;
+    }
+    a {
+      color: inherit; /* Cards will handle their own hover */
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+    }
+
+    /* =====================
+       2) HEADER & NAV 
+       ===================== */
+    header {
+      background: #24292e;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      color: white;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* =====================
+       3) HERO / INTRO SECTION 
+       ===================== */
+    .hero {
+      background: #ffffff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: #586069;
+      font-size: 1.1rem;
+    }
+
+    /* =====================
+       4) PROJECT CARDS GRID 
+       ===================== */
+    .projects-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .projects-section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e1e4e8;
+      padding-bottom: 0.5rem;
+    }
+    .project-cards {
+      display: grid;
+      gap: 1.5rem;
+      /* Two columns on screens wider than 640px, one column on narrower */
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    /* Each individual card */
+    .project-card {
+      background: white;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column; /* we'll override on desktop */
+      transition: box-shadow 0.2s ease, transform 0.1s ease;
+    }
+    .project-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+    }
+    /* When clicked, treat the whole card as a link */
+    .project-card a.full-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: inherit;
+    }
+
+    /* Inside each card: image + text container */
+    .card-inner {
+      display: flex;
+      flex-direction: column; /* mobile first: stack */
+    }
+    .card-image img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #0366d6;
+    }
+    .card-content p {
+      color: #586069;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    /* On screens ≥ 640px, show image and content side-by-side */
+    @media (min-width: 640px) {
+      .card-inner {
+        flex-direction: row;
+      }
+      .card-image {
+        flex: 0 0 40%; /* image takes up 40% of card’s width */
+      }
+      .card-content {
+        flex: 1;
+      }
+      .card-image img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    /* =====================
+       5) ABOUT & CONTACT 
+       ===================== */
+    .about-section, .contact-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .about-section h2, .contact-section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e1e4e8;
+      padding-bottom: 0.5rem;
+    }
+    .about-section p, .contact-section p {
+      color: #586069;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .about-section ul {
+      margin-top: 1rem;
+      color: #586069;
+      font-size: 1rem;
+      list-style: disc inside;
+    }
+    .about-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* =====================
+       6) FOOTER 
+       ===================== */
+    footer {
+      background: #24292e;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =============
+       A) HEADER & NAV 
+       ============= -->
+  <header>
+    <div class="container">
+      <h1>Akanksha Murali</h1>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =============
+       B) HERO / WELCOME 
+       ============= -->
+  <section class="hero" id="home">
+    <h2>Graduate Student at NYU</h2>
+    <p>Building Robotics, SLAM, &amp; Computer Vision Systems.</p>
+  </section>
+
+  <!-- =============
+       C) PROJECTS 
+       ============= -->
+  <section class="projects-section" id="projects">
+    <h2>Highlighted Projects</h2>
+    <div class="project-cards">
+
+      <!-- ==== EXAMPLE: PROJECT #1 ==== -->
+      <div class="project-card">
+        <!-- This <a> makes the entire card clickable -->
+        <a class="full-link" href="https://github.com/akankshamurali/Hexy_Auto_V9_MultiProcess" target="_blank">
+          <div class="card-inner">
+            <div class="card-image">
+              <!-- EDIT THIS: replace with your actual filename in assets/images/ -->
+              <img src="assets/images/hexy_thumbnail.png"
+                   alt="Hexapod Autonomous Navigation Screenshot" />
+            </div>
+            <div class="card-content">
+              <!-- EDIT THESE: project title & description -->
+              <h3>Hexapod Autonomous Navigation</h3>
+              <p>
+                SLAM + MPC on a six-legged robot using ZED stereo camera and ROS2.  
+                Real‐time pose logging, obstacle avoidance, and dynamic gait control.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- ==== EXAMPLE: PROJECT #2 ==== -->
+      <div class="project-card">
+        <a class="full-link" href="https://github.com/akankshamurali/Traffic_Light_Detector" target="_blank">
+          <div class="card-inner">
+            <div class="card-image">
+              <img src="assets/images/traffic_light_thumbnail.jpg"
+                   alt="Traffic Light Detection Screenshot" />
+            </div>
+            <div class="card-content">
+              <h3>Traffic Light Detection</h3>
+              <p>
+                Real-time computer vision pipeline (Python/OpenCV) for  
+                detecting and classifying traffic lights in video streams.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- ==== ADD MORE PROJECT-CARD BLOCKS HERE ==== -->
+      <!-- Copy–Paste the entire <div class="project-card"> … </div> block,
+           then change the href, img src, alt text, <h3> title, and <p> description. -->
+      <!-- e.g.:
+
+      <div class="project-card">
+        <a class="full-link" href="https://github.com/akankshamurali/Your_Other_Repo" target="_blank">
+          <div class="card-inner">
+            <div class="card-image">
+              <img src="assets/images/your_other_thumbnail.png"
+                   alt="Short alt text for your other project" />
+            </div>
+            <div class="card-content">
+              <h3>Your Other Project Title</h3>
+              <p>A concise description of what Your Other Project does.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      -->
+    </div>
+  </section>
+
+  <!-- =============
+       D) ABOUT ME 
+       ============= -->
+  <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a graduate student at New York University focusing on robotics, SLAM, and computer vision.
+    </p>
+    <ul>
+      <li>Built a hexapod robot with SLAM-based autonomous navigation using a ZED stereo camera.</li>
+      <li>Developed computer vision pipelines (traffic light & lane detection) in Python/OpenCV.</li>
+      <li>Designed MPC-based control loops in C++ for real-time obstacle avoidance.</li>
+      <li>Mentored 220+ students in ML, ROS2, and control theory as a Graduate Adjunct at NYU.</li>
+    </ul>
+  </section>
+
+  <!-- =============
+       E) CONTACT 
+       ============= -->
+  <section class="contact-section" id="contact">
+    <h2>Get in Touch</h2>
+    <p>
+      Feel free to reach out if you’d like to collaborate, have questions about any project,  
+      or just want to say hello.
+    </p>
+    <p>Email: <a href="mailto:akanksha@example.com">akanksha@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/akankshamurali/">linkedin.com/in/akankshamurali</a></p>
+  </section>
+
+  <!-- =============
+       F) FOOTER 
+       ============= -->
+  <footer>
+    <p>© 2025 Akanksha Murali. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
