@@ -5,59 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About – Akanksha Murali</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- For social icons (Font Awesome) uncomment next line: -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pcfmZF3xZiHp+Un4cWmgblVh3DRQ2rsIsvJRcGHzPS0H0e4dH63v3IJROT1R+9Q2Xl2cV5y0eYzYpGGY8ThTXA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
 
-  <!-- ===== HEADER & NAV ===== -->
+  <!-- ========== HEADER ========== -->
   <header>
     <div class="container">
+      <!-- Left: social icons -->
+      <div class="socials">
+        <!-- If using FontAwesome icons, uncomment the <i class="fab fa-..."> versions below. -->
+        <!-- <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+        <!-- <a href="https://github.com/akankshamurali" target="_blank"><i class="fab fa-github"></i></a> -->
+        <!-- <a href="mailto:akanksha@example.com"><i class="fas fa-envelope"></i></a> -->
+        <!-- If you don’t include Font Awesome, just show text links: -->
+        <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/akankshamurali" target="_blank">GitHub</a>
+        <a href="mailto:akanksha@example.com">Email</a>
+      </div>
+
+      <!-- Center: your name -->
       <h1>Akanksha Murali</h1>
+
+      <!-- Right: tabs -->
       <nav>
-        <a href="index.html" class="active">About</a>
+        <a href="index.html" class="active">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== ABOUT & RESUME SECTION ===== -->
-  <section class="section-wrapper" id="about">
-    <h2>About Me</h2>
+  <!-- ========== HERO / ABOUT SECTION ========== -->
+  <section class="hero">
+    <h2>Hi, I’m Akanksha Murali!</h2>
     <p>
-      I’m a graduate student at New York University specializing in robotics, SLAM, and computer vision.
-      Over the past two years, I have:
+      A graduate student at NYU specializing in robotics, SLAM, and computer vision.  
+      Whether I’m building a hexapod robot with real-time SLAM or designing a computer-vision pipeline for traffic-light detection,  
+      I’m fueled by a passion for solving complex challenges with precision and creativity.  
+      Let’s connect and build innovative solutions together!
     </p>
-    <ul>
-      <li>Built a hexapod robot with SLAM‐based autonomous navigation using the ZED stereo camera.</li>
-      <li>Developed computer vision pipelines (traffic light & lane detection) in Python/OpenCV.</li>
-      <li>Designed MPC‐based control loops in C++ for real‐time obstacle avoidance.</li>
-      <li>Mentored 220+ students in ML, ROS2, and control theory as a Graduate Adjunct at NYU.</li>
-    </ul>
 
-    <!-- ===== MULTIPLE RESUME LINKS ===== -->
-    <div style="margin-top: 1rem;">
-      <p style="font-weight:500; color:#586069;">View My Resumes:</p>
-      <ul style="margin-top:0.5rem; line-height:1.6;">
-        <li style="margin-bottom:0.5rem;">
-          <a class="button" href="assets/resumes/Akanksha Murali - Machine Learning Resume.pdf" target="_blank">
-            Machine Learning
-          </a>
-        </li>
-        <li style="margin-bottom:0.5rem;">
-          <a class="button" href="assets/resumes/Akanksha Murali - Automation and Robotics Resume.pdf" target="_blank">
-            Robotics & Automation
-          </a>
-        </li>
-        <li style="margin-bottom:0.5rem;">
-          <a class="button" href="assets/resumes/Controls_Resume.pdf" target="_blank">
-            Controls Resume
-          </a>
-        </li>
-      </ul>
+    <!-- Call-to-action buttons -->
+    <div class="cta-buttons">
+      <a href="projects.html">My Work</a>
+      <a href="resumes.html">Resumes</a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ========== FOOTER ========== -->
   <footer>
     <p>© 2025 Akanksha Murali. All rights reserved.</p>
   </footer>
