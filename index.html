@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home – Akanksha Murali</title>
+  <title>About – Akanksha Murali</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,14 +13,14 @@
     <div class="container">
       <h1>Akanksha Murali</h1>
       <nav>
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="active">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== ABOUT ME SECTION ===== -->
+  <!-- ===== ABOUT & RESUME SECTION ===== -->
   <section class="section-wrapper" id="about">
     <h2>About Me</h2>
     <p>
@@ -34,32 +34,27 @@
       <li>Mentored 220+ students in ML, ROS2, and control theory as a Graduate Adjunct at NYU.</li>
     </ul>
 
-    <!-- == RESUME DROPDOWN == -->
-    <label for="resume-select" style="font-weight:500; color:#24292e;">
-      Choose a resume:
-    </label>
-    <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem;">
-      <select id="resume-select" style="padding: 0.5rem 0.75rem; border:1px solid #d1d5da; border-radius:4px;">
-        <option value="" selected disabled>-- Select Your Resume --</option>
-        <option value="assets/resumes/DataScience_Resume.pdf">Data Science Resume</option>
-        <option value="assets/resumes/Robotics_Resume.pdf">Robotics Resume</option>
-        <option value="assets/resumes/Controls_Resume.pdf">Controls Resume</option>
-      </select>
-      <button id="open-resume-btn" class="button" style="padding:0.6rem 1.2rem; margin-left:0;">
-        Open
-      </button>
+    <!-- ===== MULTIPLE RESUME LINKS ===== -->
+    <div style="margin-top: 1rem;">
+      <p style="font-weight:500; color:#586069;">View My Resumes:</p>
+      <ul style="margin-top:0.5rem; line-height:1.6;">
+        <li style="margin-bottom:0.5rem;">
+          <a class="button" href="assets/resumes/DataScience_Resume.pdf" target="_blank">
+            Data Science Resume
+          </a>
+        </li>
+        <li style="margin-bottom:0.5rem;">
+          <a class="button" href="assets/resumes/Robotics_Resume.pdf" target="_blank">
+            Robotics Resume
+          </a>
+        </li>
+        <li style="margin-bottom:0.5rem;">
+          <a class="button" href="assets/resumes/Controls_Resume.pdf" target="_blank">
+            Controls Resume
+          </a>
+        </li>
+      </ul>
     </div>
-    <script>
-      document.getElementById('open-resume-btn').addEventListener('click', function() {
-        const select = document.getElementById('resume-select');
-        const url = select.value;
-        if (url) {
-          window.open(url, '_blank');
-        } else {
-          alert('Please select a resume first.');
-        }
-      });
-    </script>
   </section>
 
   <!-- ===== FOOTER ===== -->
