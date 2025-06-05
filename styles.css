@@ -36,11 +36,11 @@ header .container {
   padding: 0 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* items: first at left, last at right */
+  justify-content: space-between; /* tabs | name | icons */
   height: 60px;
 }
 
-/* 2a) Left: now “tabs” (Home / Projects) */
+/* 2a) Left: tabs (Home / Projects) */
 header nav {
   display: flex;
   gap: 1.5rem;
@@ -59,14 +59,14 @@ header nav a.active {
   opacity: 1;
 }
 
-/* 2b) Center: name */
+/* 2b) Center: your name */
 header h1 {
   color: #fff;
   font-size: 1.75rem;
   margin: 0;
   line-height: 1;
   text-align: center;
-  flex: 1; /* pushes nav to left and socials to right */
+  flex: 1; /* pushes nav to left, socials to right */
 }
 
 /* 2c) Right: social icons */
@@ -98,7 +98,7 @@ header .socials a:hover {
   padding: 0 1rem;
 }
 .hero h2 {
-  font-size: 3rem;
+  font-size: 3rem; /* large heading */
   margin-bottom: 1rem;
 }
 .hero p {
@@ -118,7 +118,7 @@ header .socials a:hover {
   margin-top: 1rem;
 }
 .hero .cta-buttons a {
-  background-color: #0366d6;
+  background-color: #0366d6; /* GitHub‐blue style */
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
