@@ -225,13 +225,14 @@ header .socials a:hover {
   gap: 1rem;
   margin-top: 1rem;
 }
+/* ← Reduced padding and font-size below */
 .resume-buttons a {
   background-color: #0366d6;
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   transition: background 0.2s ease;
 }
