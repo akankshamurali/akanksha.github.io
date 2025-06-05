@@ -4,9 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About – Akanksha Murali</title>
+
+  <!-- Link to shared CSS -->
   <link rel="stylesheet" href="styles.css" />
-  <!-- For social icons (Font Awesome) uncomment next line: -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pcfmZF3xZiHp+Un4cWmgblVh3DRQ2rsIsvJRcGHzPS0H0e4dH63v3IJROT1R+9Q2Xl2cV5y0eYzYpGGY8ThTXA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <!-- Font Awesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pcfmZF3xZiHp+Un4cWmgblVh3DRQ2rsIsvJRcGHzPS0H0e4dH63v3IJROT1R+9Q2Xl2cV5y0eYzYpGGY8ThTXA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
 
@@ -15,14 +24,15 @@
     <div class="container">
       <!-- Left: social icons -->
       <div class="socials">
-        <!-- If using FontAwesome icons, uncomment the <i class="fab fa-..."> versions below. -->
-        <!-- <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
-        <!-- <a href="https://github.com/akankshamurali" target="_blank"><i class="fab fa-github"></i></a> -->
-        <!-- <a href="mailto:akanksha@example.com"><i class="fas fa-envelope"></i></a> -->
-        <!-- If you don’t include Font Awesome, just show text links: -->
-        <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/akankshamurali" target="_blank">GitHub</a>
-        <a href="mailto:akanksha@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/akankshamurali" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:akanksha@example.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
 
       <!-- Center: your name -->
