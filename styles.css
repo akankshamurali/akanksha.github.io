@@ -220,19 +220,20 @@ header .socials a:hover {
    6) RESUME BUTTONS (resumes.html)
    ====================================== */
 .resume-buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
-  gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;             /* allow wrapping to multiple rows */
+  gap: 0.5rem;                 /* small gap between buttons */
   margin-top: 1rem;
 }
 .resume-buttons a {
+  display: inline-block;       /* shrink to fit content */
   background-color: #0366d6;
   color: #fff;
-  padding: 0.25rem 0.75rem;   /* smaller padding */
+  padding: 0.25rem 0.75rem;    /* small vertical/horizontal padding */
   border-radius: 4px;
   font-weight: 500;
-  font-size: 0.8rem;         /* smaller font */
-  white-space: nowrap;       /* prevent wrapping */
+  font-size: 0.8rem;          /* small font size */
+  white-space: nowrap;        /* prevent wrapping within the button */
   transition: background 0.2s ease;
 }
 .resume-buttons a:hover {
