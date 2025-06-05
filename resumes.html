@@ -3,19 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resumes – Akanksha Murali</title>
+  <title>Experience – Akanksha Murali</title>
 
   <!-- Link to shared CSS -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Font Awesome for social icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-pcfmZF3xZiHp+Un4cWmgblVh3DRQ2rsIsvJRcGHzPS0H0eYzYpGGY8ThTXA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
 </head>
 <body>
 
@@ -26,32 +17,46 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
+        <a href="resumes.html" class="active">Experience</a>
       </nav>
 
       <!-- Center: your name -->
       <h1>Akanksha Murali</h1>
 
-      <!-- Right: social icons -->
+      <!-- Right: social text links -->
       <div class="socials">
-        <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/akankshamurali" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:akanksha@example.com" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+        <a href="https://www.linkedin.com/in/akankshamurali/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/akankshamurali" target="_blank">GitHub</a>
+        <a href="mailto:akanksha@example.com">Email</a>
       </div>
     </div>
   </header>
 
-  <!-- ========== RESUMES SECTION ========== -->
-  <section class="section-wrapper" id="resumes">
-    <h2>My Resumes</h2>
-    <p style="color:#586069;">
-      Below you can find different versions of my resume for my experience in each feild. Click any button to open the PDF in a new tab.
-    </p>
+  <!-- ========== EXPERIENCE SECTION ==========
+       (Replace these sample entries with your actual experience) -->
+  <section class="section-wrapper" id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Graduate Adjunct at NYU</strong> (2023–Present)<br />
+        • Mentored 220+ students in ML, ROS2, and control theory.<br />
+        • Developed curriculum, delivered lectures, and graded assignments.
+      </li>
+      <li style="margin-top:1rem;">
+        <strong>Robotics Research Assistant</strong> (2022–2023)<br />
+        • Built a hexapod robot with SLAM‐based autonomous navigation using a ZED stereo camera.<br />
+        • Designed MPC‐based control loops in C++ for real‐time obstacle avoidance.
+      </li>
+      <li style="margin-top:1rem;">
+        <strong>Computer Vision Intern</strong> (2021–2022)<br />
+        • Developed traffic light and lane detection pipelines in Python/OpenCV.<br />
+        • Integrated real‐time inference on embedded GPU platforms.
+      </li>
+      <!-- Add more <li> blocks as needed -->
+    </ul>
+
+    <!-- ========== RESUME BUTTONS (after experience) ==========
+         These are your resume PDFs; click to open in a new tab -->
     <div class="resume-buttons">
       <a href="assets/resumes/DataScience_Resume.pdf" target="_blank">
         Data Science Resume
