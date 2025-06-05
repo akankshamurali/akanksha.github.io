@@ -219,23 +219,29 @@ header .socials a:hover {
 /* ======================================
    6) RESUME BUTTONS (resumes.html)
    ====================================== */
+
+/* Container: use flex in row direction, allow wrapping */
 .resume-buttons {
   display: flex;
-  flex-wrap: wrap;             /* allow wrapping to multiple rows */
-  gap: 0.5rem;                 /* small gap between buttons */
+  flex-wrap: wrap;        /* if too many buttons, they wrap to next line */
+  gap: 0.5rem;            /* small space between buttons */
   margin-top: 1rem;
+  justify-content: flex-start; /* or center if you want them centered */
 }
+
+/* Each button: inline-block so it only fits its content */
 .resume-buttons a {
-  display: inline-block;       /* shrink to fit content */
+  display: inline-block;  
   background-color: #0366d6;
   color: #fff;
-  padding: 0.25rem 0.75rem;    /* small vertical/horizontal padding */
+  padding: 0.25rem 0.75rem;  /* small padding around text */
   border-radius: 4px;
   font-weight: 500;
-  font-size: 0.8rem;          /* small font size */
-  white-space: nowrap;        /* prevent wrapping within the button */
+  font-size: 0.8rem;         /* slightly smaller text */
+  white-space: nowrap;       /* prevent multi‐line wrapping of text */
   transition: background 0.2s ease;
 }
+
 .resume-buttons a:hover {
   background-color: #0356b6;
 }
